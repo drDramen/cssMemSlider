@@ -1,7 +1,9 @@
 :root {
   --color-primary-text: #212121;
-  --color-secondary-text: #757575;
-  --content-width: 80rem;
+  --color-primary: #74b9ff;
+  --color-primary-hover: #0984e3;
+  --color-primary-active: #b2bec3;
+  --content-width: min(88vmin, 80rem);
   --container-offset: 2vw;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --slides-shift: 0;
@@ -73,7 +75,7 @@ a {
 
 .title {
   text-align: center;
-  color: #74b9ff;
+  color: var(--color-primary);
 }
 
 .container {
@@ -179,9 +181,9 @@ a {
 }
 
 .slider__captions {
-  margin-right: 4rem;
+  margin-right: 1rem;
   padding-top: 1rem;
-  font-size: 2rem;
+  font-size: 1.6rem;
   overflow: hidden;
 }
 
@@ -220,19 +222,19 @@ a {
   width: 1.6rem;
   height: 1.6rem;
   border-radius: 50%;
-  border: 0.3rem solid #74b9ff;
-  background-color: #74b9ff;
+  border: 0.3rem solid var(--color-primary);
+  background-color: var(--color-primary);
   transition: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
 .controls__item:hover .icon {
-  background-color: #0984e3;
-  border-color: #0984e3;
+  background-color: var(--color-primary-hover);
+  border-color: var(--color-primary-hover);
 }
 
 .controls__item:active .icon {
-  background-color: #b2bec3;
-  border-color: #b2bec3;
+  background-color: var(--color-primary-active);
+  border-color: var(--color-primary-active);
 }
 
 #slider-radio1:checked ~ .slider__container .controls__item-1 > .icon,
@@ -248,9 +250,9 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  color: #74b9ff;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: var(--color-primary);
 }
 
 .footer__copy {
@@ -267,10 +269,10 @@ a {
 }
 
 .footer__github:hover {
-  color: #0984e3;
+  color: var(--color-primary-hover);
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1024px) {
   .slider__footer {
     flex-direction: column;
   }
