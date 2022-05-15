@@ -1,24 +1,104 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Mem Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/style/normalize.css" />
+    <link rel="stylesheet" href="assets/style/main.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Mem Slider</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/style/normalize.css">
-  <link rel="stylesheet" href="assets/style/main.css">
-</head>
-
-<body class="page__body">
-  <div class="site-container">
-    <main>
-      <div class="container"></div>
-    </main>
-  </div>
-</body>
-
+  <body class="page__body">
+    <div class="site-container">
+      <header>
+        <h1 class="title">CSS Mem Slider</h1>
+      </header>
+      <main>
+        <div class="container">
+          <div class="slider">
+            <input
+              class="visually-hidden"
+              type="radio"
+              name="controls"
+              id="slider-radio1"
+              checked
+            />
+            <input class="visually-hidden" type="radio" name="controls" id="slider-radio2" />
+            <input class="visually-hidden" type="radio" name="controls" id="slider-radio3" />
+            <input class="visually-hidden" type="radio" name="controls" id="slider-radio4" />
+            <input class="visually-hidden" type="radio" name="controls" id="slider-radio5" />
+            <input class="visually-hidden" type="radio" name="controls" id="slider-radio6" />
+            <div class="slider__container container">
+              <div class="slider__slides slides">
+                <ul class="slides__items list-reset">
+                  <li class="slides__item slides__item-1"></li>
+                  <li class="slides__item slides__item-2"></li>
+                  <li class="slides__item slides__item-3"></li>
+                  <li class="slides__item slides__item-4"></li>
+                  <li class="slides__item slides__item-5"></li>
+                  <li class="slides__item slides__item-6"></li>
+                </ul>
+              </div>
+              <div class="slider__footer">
+                <div class="slider__captions captions">
+                  <ul class="captions__items list-reset">
+                    <li class="captions__item">
+                      Look at&nbsp;this organization!<br> If-else statements within if&zwj;-&zwj;else statements?!
+                    </li>
+                    <li class="captions__item">
+                      My&nbsp;compiler after&nbsp;I finally add that missing semicolon which it&nbsp;reported was missing.
+                    </li>
+                    <li class="captions__item">
+                      Me&nbsp;thinking about the keyword I searched in&nbsp;google that took me&nbsp;to&nbsp;the right stack overflow page..
+                    </li>
+                    <li class="captions__item">JS&nbsp;isn&rsquo;t going anywhere, but TypeScript is&nbsp;nice</li>
+                    <li class="captions__item">That time when your first Hello World works</li>
+                    <li class="captions__item">No, please, no</li>
+                  </ul>
+                </div>
+                <div class="slider__controls controls">
+                  <div class="controls__wrapper">
+                    <label for="slider-radio1" class="controls__item controls__item-1">
+                      <i class="icon"></i>
+                    </label>
+                    <label for="slider-radio2" class="controls__item controls__item-2">
+                      <i class="icon"></i>
+                    </label>
+                    <label for="slider-radio3" class="controls__item controls__item-3">
+                      <i class="icon"></i>
+                    </label>
+                    <label for="slider-radio4" class="controls__item controls__item-4">
+                      <i class="icon"></i>
+                    </label>
+                    <label for="slider-radio5" class="controls__item controls__item-5">
+                      <i class="icon"></i>
+                    </label>
+                    <label for="slider-radio6" class="controls__item controls__item-6">
+                      <i class="icon"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        <div class="container footer__container">
+          <div class="footer__copy">
+            <span>&copy;</span>
+            <span>2022</span>
+          </div>
+          <p class="footer__github"><a href="https://github.com/drDramen">Github</a></p>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
