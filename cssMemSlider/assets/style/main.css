@@ -1,8 +1,8 @@
 :root {
   --color-primary-text: #212121;
   --color-secondary-text: #757575;
-  --content-width: min(90vw, 80rem);
-  --container-offset: 5vw;
+  --content-width: 80rem;
+  --container-offset: 2vw;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   --slides-shift: 0;
 }
@@ -67,16 +67,8 @@ a {
   padding: 0;
 }
 
-.visually-hidden {
-  width: 0.1rem;
-  height: 0.1rem;
-  margin: -0.1rem;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.hidden {
+  display: none;
 }
 
 .title {
@@ -101,6 +93,7 @@ a {
 }
 
 .slides {
+  height: 100%;
   max-width: 100%;
   margin-bottom: 1vw;
   aspect-ratio: 6/4;
