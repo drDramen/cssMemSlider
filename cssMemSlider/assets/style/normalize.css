@@ -165,10 +165,6 @@ summary {
   display: list-item;
 }
 
-template {
-  display: none;
-}
-
 [hidden] {
   display: none;
 }
